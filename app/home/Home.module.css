@@ -1,0 +1,216 @@
+/* General container styling */
+.box {
+  font-family: Arial, sans-serif;
+  /* background-color: #a80a0ae7; */
+  height: 100vh;
+  min-height: max-content;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Dropdown styling */
+
+/* Prompt input styling */
+.promptContainer {
+  margin-bottom: 16px;
+  color: white;
+  background-color: #0000;
+}
+
+
+
+.promptInput {
+  width: 90vw;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white;
+  background-color: #0000;
+  display: flex;
+  align-self: center;
+}
+
+.promptInput:focus {
+  outline: none;
+  border-color: #747678;
+  box-shadow: 0 0 4px rgba(94, 95, 95, 0.5);
+  color: white;
+  background-color: #0000;
+}
+
+/* Webcam preview styling */
+.webcam {
+  margin-top: 16px;
+  position: relative;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  z-index: 888;
+}
+.webcamContainer{
+  padding-bottom: 50px;
+  /* background-color: #d10d0de8; */
+  height: 100vh;
+  overflow: hidden;
+}
+/* Button styling */
+.button {
+  background-color: #595b5d;
+  color: white;
+  padding: 16px 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* Processed image styling */
+.processedImageContainer {
+  margin-top: 16px;
+}
+
+.processedImageTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.processedImage {
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Status message styling */
+.statusMessage {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.controlBox{
+  /* display: flex; */
+  
+  background-color: #000000;
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  right: 10px;
+  
+  border-radius: 19px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.217);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.box {
+  font-family: Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.webcamBackground {
+  position: absolute;
+  top: 0px; /* Move the element slightly outside the viewport */
+  right: 0px;
+  left: 0px;
+   width: calc(100% + 20px); /* Increase the width */
+  height: calc(100% + 20px); /* Increase the height */
+  border: none;
+  object-fit: fill; /* Stretch the webcam feed to fill the container */
+  z-index: 7; /* Place the webcam feed behind other content */
+  filter: blur(15px); /* Apply blur effect to the webcam feed */
+  background: black;
+  transform: scale(1.2); 
+}
+
+.captureAndUploadButton{
+  background-color: #ffffff; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border-style: double;
+    border-width: 4px;
+    border-color:  #6e7171; /* Green */
+    
+    cursor: pointer;
+}
+
+.captureAndUploadProcess{
+  background-color: #ffffff; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: lightgrey; /* Red */
+    
+    cursor: pointer;
+    animation: listener 1s infinite;
+}
+
+@keyframes listener {
+    0% {
+        background-color: #ffffff; /* Red */
+        padding: 15px 15px;
+        border-color: lightgrey; 
+    }
+    50%{
+        background-color: #979696; /* Red */
+        transform: scale(1.1);
+        margin: auto;
+        border-color: #6e7171;
+    }
+    100% {
+        background-color: #ffffff; /* Red */
+        padding: 15px 15px;
+        border-color: lightgrey; /* Red */
+    }
+}
+
+.recognizedTextContainer{
+  width: 90vw;
+  padding: 8px;
+  border-radius: 50px;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white;
+  background-color: #0000;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}

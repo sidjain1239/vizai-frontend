@@ -1,0 +1,6 @@
+authtoken: 2xSSQ4dMYcRKnLiGdKz9NGsCUOo_6G6gStVsVRGKfhSdtRLaD
+tunnels:
+  mytunnel:
+    addr: 5000
+    proto: http
+    hostname: narwhal-selected-likely.ngrok-free.app
