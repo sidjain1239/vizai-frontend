@@ -18,7 +18,7 @@ export async function POST(req) {
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
     // Use absolute URL or environment variable for host
-    const host = process.env.APP_URL || 'http://localhost:3000';
+    const host = process.env.APP_URL || 'https://vizai-frontend.vercel.app';
     const response = await axios.post(`${host}/api/send-mail`, {
       to: email,
       subject: 'Email Verification OTP',
